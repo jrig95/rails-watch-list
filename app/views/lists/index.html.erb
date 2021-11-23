@@ -1,6 +1,12 @@
-<h1>My lists</h1>
+<div class="container mx-auto mt-8 h-screen">
+<div class="hero text-center ">
+<h1 class="lists_h1">Movie lists</h1>
+<%= link_to "Add a list", new_list_path(@list), class: "btn text-white font-bold py-2 px-4 rounded" %>
+</div>
+<div class="lists">
 <% @lists.each do |list| %>
 <p><%= list.name %></p>
 <%= link_to "See more", list_path(list) %>
 <% end %>
-<%= link_to "Add a list", new_list_path(@list)  %>
+</div>
+</div>
