@@ -1,0 +1,5 @@
+<%= simple_form_for [ @list, @bookmark ] do |b| %>
+  <%= b.text_area :comment %>
+  <%= b.association :movie %>
+  <%= b.submit "Create a bookmark", class: "btn btn-primary" %>
+<% end %>

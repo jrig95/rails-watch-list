@@ -65,6 +65,8 @@ GEM
     crass (1.0.6)
     diff-lcs (1.4.4)
     erubi (1.10.0)
+    faker (2.19.0)
+      i18n (>= 1.6, < 2)
     ffi (1.15.4)
     globalid (0.5.2)
       activesupport (>= 5.0)
@@ -158,6 +160,12 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    simple_form (5.1.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
+    simple_form-tailwind (0.1.0)
+      railties (>= 4.0, <= 7)
+      simple_form (>= 5.0)
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -169,6 +177,8 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    tailwindcss-rails (0.5.1)
+      rails (>= 6.0.0)
     thor (1.1.0)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -197,6 +207,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
+  faker
   jbuilder (~> 2.7)
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
@@ -205,8 +216,11 @@ DEPENDENCIES
   rails-controller-testing
   rspec-rails
   sass-rails (>= 6)
+  simple_form
+  simple_form-tailwind
   spring
   spring-watcher-listen (~> 2.0.0)
+  tailwindcss-rails
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)

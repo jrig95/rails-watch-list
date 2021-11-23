@@ -48,3 +48,11 @@ gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
 gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
+
+# TailwindCss
+gem 'simple_form'
+gem 'tailwindcss-rails'
+gem 'simple_form-tailwind'
+
+
+gem 'faker'
