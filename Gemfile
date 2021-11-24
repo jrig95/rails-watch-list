@@ -54,5 +54,8 @@ gem 'simple_form'
 gem 'tailwindcss-rails'
 gem 'simple_form-tailwind'
 
-
+# fake data
 gem 'faker'
+
+# cloudinary
+gem 'dotenv-rails', groups: [:development, :test]

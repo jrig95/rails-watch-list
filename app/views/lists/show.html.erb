@@ -1,17 +1,22 @@
 <h1> movies</h1>
+<div class="lists">
 <ul class="list-group">
   <% @list.movies.each do |movie| %>
+  <div class="lists">
+  <div class="max-w-sm rounded overflow-hidden shadow-lg">
     <li class="list-group-item">
     <%= movie.title %>
     <%= movie.overview %>
     <%= movie.poster_url %>
     <%= movie.rating %>
-    </li>
-  <% end %>
-  <%= link_to "Add a bookmark", new_list_bookmark_path(@list)  %>
-  <% @bookmarks.each do |book|  %>
-  <%= link_to 'Destroy', bookmark_path(book),
+    <% movie.bookmarks.each do |bookmark| %>
+    <%= link_to 'Destroy', bookmark_path(bookmark),
             data: {:confirm => 'Are you sure?'} , :method => :delete %>
-  <%end %>
+    <% end %>
+    </li>
+    </div>
+    </div>
+  <% end %>
 </ul>
 <%= link_to "Back to lists", lists_path(@lists) %>
+  <%= link_to "Add a bookmark", new_list_bookmark_path(@list)  %>
