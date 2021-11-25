@@ -23,13 +23,6 @@ class BookmarksController < ApplicationController
     redirect_to lists_path
   end
 
-
-#   def destroy
-#     @patient = Patient.find(params[:id])
-#     @patient.destroy
-#     redirect_to '/patients/new', :notice => "Your patient has been deleted"
-# end
-
   private
   def bookmark_params
     params.require(:bookmark).permit(:comment, :movie_id)
