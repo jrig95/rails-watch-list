@@ -1,5 +1,8 @@
+<div class="home-page">
 <div class="container mx-auto">
-<div class="hero text-center flex items-center justify-center flex-col bg-cover">
+<%# <div class="hero text-center flex items-center justify-center flex-col bg-cover"> %>
+<%# </div> %>
+<div class="hero">
 <h1 class="lists_h1">Movie lists</h1>
 <%= link_to "Add a list", new_list_path(@list), class: "list_btn text-white font-bold py-2 px-4 rounded" %>
 </div>
@@ -8,13 +11,17 @@
 <div class="lists_index">
 <div class="max-w-sm rounded overflow-hidden shadow-lg title">
 <div class="px-6 py-4 text-center">
-<div class="font-bold text-xl mb-2"><%= list.name %></div>
+<div class="card_img">
+<img src="assets/minimalist_pic.png" alt="" class="object-cover h-48 w-full card-image">
+</div>
+<div class="font-bold text-xl mb-2 list_name"><%= list.name %></div>
 </div>
 <div class="px-6 pt-2 pb-2">
-<%= link_to "See more", list_path(list) %>
+<%= link_to "See more", list_path(list), class:"see-more" %>
 </div>
 </div>
 </div>
 <% end %>
+</div>
 </div>
 </div>
