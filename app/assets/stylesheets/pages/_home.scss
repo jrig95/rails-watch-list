@@ -1,73 +1,131 @@
 // Specific CSS for your home-page
-body{
-  background: linear-gradient(#556270, #FF6B6B);
-   height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-.card-image{
-  border-radius: 2%;
-}
-
-.container{
-  margin-top: 50px;
-  max-width: 100vw;
-  width: 900px;
-  text-align: center;
-}
-
-.hero{
-  margin-bottom: 50px;
-}
-
-// .hero{
-//   height: 650px;
-//   background-image: url('assets/movie_theater2.jpg');
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: 0 -85px;
-
-// }
-.lists_h1{
- font-size: 40px;
-  color: #FF6B6B;
-  font-weight: bold;
-  text-shadow: 1px 2px 12px black;
-}
-
-.list_btn{
-  background-color: #556270;
-  color: #FF6B6B;
-  box-shadow: 0 21px 17px rgba(12, 9, 9, 0.2);
-  text-shadow: 1px 1px 10px black;
-}
-
-.list-container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.list-container {
+  width:  auto;
   height: 500px;
-  grid-template-rows: auto;
-  column-gap: 30px;
-  row-gap: 30px;
+  overflow-x: auto;
+  display: flex;
+  align-items: stretch;
+  padding-left: 25px;
+  padding-top: 70px;
+  background-color: #f5f5f5;
 }
 
-.title{
-  box-shadow: 0 21px 37px rgba(12, 9, 9, 0.2);
-  border-radius: 4%;
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.lists_index{
+  min-width: 300px;
+  margin-right: 25px;
+}
+
+.card{
+  height: 350px;
 }
 
 .list_name{
-  color: #e0ffff;
-  padding-top: 10px;
+  margin-bottom: 65px;
   margin-top: 10px;
-  font-size: 22px;
-  text-shadow: 1px 2px 7px black;
 }
 
-.see-more{
-  color:#e0ffff;
-  font-weight: 600;
-  text-shadow: 1px 2px 7px black;
+.page-title{
+  font-family: 'Permanent Marker', cursive;
+  color: #ffffff;
+}
+// body{
+//   background: linear-gradient(#556270, #FF6B6B);
+//    height: 100%;
+//     margin: 0;
+//     background-repeat: no-repeat;
+//     background-attachment: fixed;
+// }
+
+// .card-image{
+//   border-radius: 2%;
+// }
+
+// .container{
+//   margin-top: 50px;
+//   max-width: 100vw;
+//   width: 900px;
+//   text-align: center;
+// }
+
+// .hero{
+//   margin-bottom: 50px;
+// }
+// // }
+// .lists_h1{
+//  font-size: 40px;
+//   color: #FF6B6B;
+//   font-weight: bold;
+//   text-shadow: 1px 2px 12px black;
+// }
+
+// .list_btn{
+//   background-color: #556270;
+//   color: #FF6B6B;
+//   box-shadow: 0 21px 17px rgba(12, 9, 9, 0.2);
+//   text-shadow: 1px 1px 10px black;
+// }
+
+// .list-container{
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   height: 500px;
+//   grid-template-rows: auto;
+//   column-gap: 30px;
+//   row-gap: 30px;
+// }
+
+// .title{
+//   box-shadow: 0 21px 37px rgba(12, 9, 9, 0.2);
+//   border-radius: 4%;
+// }
+
+// .list_name{
+//   color: #e0ffff;
+//   padding-top: 10px;
+//   margin-top: 10px;
+//   font-size: 22px;
+//   text-shadow: 1px 2px 7px black;
+// }
+
+// .see-more{
+//   color:#e0ffff;
+//   font-weight: 600;
+//   text-shadow: 1px 2px 7px black;
+// }
+
+// movies css
+.movie-container{
+  margin-top: 50px;
+  max-width: 100vw;
+  width: auto;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.movies_h1{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.list-group{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    width: 300px;
+}
+
+.lists{
+  width: 300px;
 }

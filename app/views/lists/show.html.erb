@@ -1,14 +1,20 @@
-<h1> movies</h1>
-<div class="lists_show">
+<div class="movie-container mx-auto">
+<h1 class="movies_h1">Movies</h1>
 <ul class="list-group">
   <% @list.movies.each do |movie| %>
   <div class="lists">
   <div class="max-w-sm rounded overflow-hidden shadow-lg">
     <li class="list-group-item">
-    <%= movie.title %>
-    <%= movie.overview %>
-    <%= movie.poster_url %>
-    <%= movie.rating %>
+    <div class="movie-image">
+    <%= image_tag "#{movie.poster_url}", alt: "Le Wagon", class: "object-cover h-48 w-full card-image" %>
+    </div>
+    <div class="movie-content">
+    <h2 class="movie-title"><%= movie.title%></h2>
+    <p class="movie-overview"><%= movie.overview %></p>
+    <p class="movie-rating"><%= movie.rating %></p>
+    <% movie.bookmarks.each do |r| %>
+    <p class="movie-comment"><%= r.comment %></p>
+    <% end %>
     <% movie.bookmarks.each do |bookmark| %>
     <%= link_to 'Destroy', bookmark_path(bookmark),
             data: {:confirm => 'Are you sure?'} , :method => :delete %>
@@ -17,6 +23,8 @@
     </div>
     </div>
   <% end %>
+  </div>
 </ul>
 <%= link_to "Back to lists", lists_path(@lists) %>
   <%= link_to "Add a bookmark", new_list_bookmark_path(@list)  %>
+  </div>

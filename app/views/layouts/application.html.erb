@@ -17,5 +17,12 @@
     <%# <main class="container mx-auto mt-28 px-5 flex"> %>
       <%= yield %>
     <%# </main> %>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+    let typed = new Typed('.page-title', {
+  strings: ["First sentence.", "Second sentence"],
+  typeSpeed: 70
+    });
+    </script>
   </body>
 </html>
